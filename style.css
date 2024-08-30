@@ -1,0 +1,394 @@
+*,
+*:after
+*:before{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:active
+:hover
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+a,
+a:hover{
+  text-decoration: none;
+}
+a :hover{
+    color: var(--primary-color) !important;
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+/*
+==================================================
+ verible difene 
+ =================================================
+ */
+:root{
+  --primary-color:  #871d34;
+  --secondry-color: #43121d;
+  --third-color: #28f125;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-grey: #999;
+  --black-color: #000;
+  --primary-font: 'roboto',sans-serif;
+  --secondry-font:'quicksand',sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+/*
+===========================================================
+ costom scrollbar
+ ==========================================================
+ */
+::-webkit-scrollbar{
+  width: 0 .625rem;
+}
+::-webkit-scrollbar-track{
+  background: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
+}
+/* 
+==========================================================
+costom css disign
+==========================================================
+ */
+ h1{
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: var(--secondry-color);
+ }
+ h2{
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  line-height: 3rem;
+  color: var(--secondry-color);
+ }
+ h4{
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  line-height: 3rem;
+  color: var(--secondry-color);
+  margin-bottom: 0.5rem;
+ }
+ h5{
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  line-height: 3rem;
+  color: var(--secondry-color);
+  margin-bottom: 0.5rem;
+ }
+ p{
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+ }
+ .main-btn{
+  display: inline-block;
+  padding: 0.225rem 1.875rem;
+  line-height: 2.225rem;
+  height: 3.225rem;
+  background-color: var(--primary-color);
+  border: 0.1875re solid var(--primary-color);
+  color: var(--white-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+  -webkit-transform: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+ }
+.white-btn{
+  padding: 0.225rem 1.875rem;
+  line-height: 2.225rem;
+  height: 3.225rem;
+  background-color: var(--white-color);
+  border: 0.1875re solid var(--white-color);
+  color: var(--text-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+  -webkit-transform: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+.main-btn :hover{
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.white-btn :hover{
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.wrapper{
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+.text-content{
+  width: 70%;
+  margin: auto;
+}
+.content-section h2,
+.testmonial-section h2,
+.book-food-text h2{
+  color: var(--white-color);
+}
+/* 
+==========================================
+Header Design
+==========================================
+ */
+ .navigation-wrap{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: var(--primary-color);
+ }
+ .navigation-wrap .nav-item{
+  padding: 0 0.625rem;
+  transition: all 0.3s ease-out;
+ }
+ .navbar-toggler{
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+ }
+ .nav-link{
+  font-size: 0.9875rem;
+  font-weight: 550;
+  text-transform: capitalize;
+  color: var(--white-color);
+  letter-spacing: 1px;
+ }
+ .nav-link:hover{
+  color: var(--text-grey);
+ }
+ .navigation-wrap .main-btn{
+  padding: 0 0 1.138rem -0.862rem;
+  box-shadow: nane;
+  margin-left: 0.625rem;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
+  transition: 0.15s;
+ }
+.main-btn:hover{
+  background-color: var(--text-grey);
+ }
+ /*=====================================================
+ chenge navbar styling .on scroll 
+  ======================================================*/
+ .navigation-wrap .scroll-on{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white-color);
+  box-shadow: 0 0.125rem 1.75rem rgb(0,0,0,0.9);
+  transition: all .15s ease-out 0s;
+ }
+
+ /* top-banner design 
+ ==========================================================*/
+ .top-banner{
+  width: 100%;
+  background: url(bg-1.jpg) no-repeat center;
+  background-size: cover;
+  padding: 16.875rem 0 9.375rem;
+  
+ }
+ /* SECTION 2 COUNTER DISIGN 
+ =========================================================*/
+ .counter-section{
+  background-color: var(--primary-color);
+  padding: 2.1rem 0;
+  display: flex;
+ }
+ .counter-section p{
+  color: var(--white-color);
+  text-transform: uppercase;
+ }
+ /* About section-3 design   
+ ==========================================================*/
+ .about-section p{
+  background: var(--white-color);
+
+ }
+ .about-section .card,
+ .about-section .card img{
+  border-radius: 0.625rem;
+  z-index: 0;
+ }
+ .about-section .text-sec{
+  padding: 2rem;
+ }
+ /* food-tyoe section design
+ ========================================================= */
+ .food-type{
+   padding-top: 3.25rem;
+ }
+ .food-type ul li{
+   font-size: 1rem;
+   color: var(--text-color);
+   line-height: 32px;
+   position: relative;
+   margin-left: 30px;
+ }
+ .food-type ul li::before{
+  position: absolute;
+  left: -2.187rem;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-family: "font awesome 5 free";
+  content: '\f00c';
+  display: inline block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+ }
+ /* story section
+ ====================================================== */
+ .story-section{
+  width: 100%;
+  height: 28.125rem;
+  background: url(bg-2.jpg) no-repeat center;
+  padding-top: 100px;
+  text-align: center;
+ }
+ .story-section h2{
+  color: var(--primary-color);
+ }
+ /* Explore food card
+ ======================================================== */
+.Explore-food .card{
+ border: none;
+ background-color: transparent;
+ border-radius: 0.9375rem;
+}
+.Explore-food .card img{
+ border-radius: 0.9375rem;
+ object-fit: cover;
+}
+.Explore-food .card span{
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid #eee;
+}
+.Explore-food .card span del{
+  color: var(--text-grey);
+  margin-left: 0.5rem;
+}
+/* textmonial-section disagn
+========================================================== */
+.testmonial-section{
+  background-color: var(--primary-color);
+}
+.testmonial-section .carousel-item{
+  margin-top: 2rem;
+  padding: 10rem 3.125rem;
+  border-radius: 0.9375rem;
+  text-align: center;
+  background-color: var(--white-color);
+}
+.testmonial-section .carousel-item img{
+  max-width: 8rem;
+  border-radius: 50%;
+}
+.testmonial-section .carousel-caption p{
+  font-size: 1.3125rem;
+  line-height: 2.0625rem;
+  padding: 0 11% 0.625rem;
+}
+/* faq section disign
+=============================================================== */
+.faq h4 span{
+  color: var(--primary-color);
+font-size: 1.875rem;
+margin-right: 0.3125rem;
+}
+/* Book food
+=========================================================== */
+.book-food{
+  width: 100%;
+  background: url('bg-3.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 71.9125px;
+  padding: 4.375rem 0;
+}
+/* form Control
+=========================================================== */
+.newslettar{
+  width: 55%;
+  margin: 0 auto;
+}
+.newslettar .form-control{
+  height: 3.225rem;
+  padding: 0 1.25rem;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  border: 0.1875rem solid var(--text-grey);
+  color: var(--black-color);
+}
+.newslettar .form-control:focus,
+.newslettar .form-control:hover{
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+/* footer section disign 
+====================================================*/
+.footer{
+  background: var(--primary-color);
+}
+.footer .footer-link{
+  font-size: 1rem;
+  color: var(--white-color);
+  padding: 0 1.875rem;
+}
+.footer .footer-link:hover{
+ color: var(--primary-color)!important; 
+}
+.footer a i{
+  font-size: 1.5rem;
+  color: var(--white-color);
+  padding: 0 1rem;
+}
